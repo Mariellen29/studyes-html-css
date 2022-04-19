@@ -1,0 +1,111 @@
+<!--Aprendendo a por tabelas nas paginas
+para coluna usa a tag th e para linha a tag td amabas tem que estar dentro da tag tr. A tag tr tem que estar dentro da tag table.
+
+passo a passo.
+
+1. primeio colocque a tag table.
+2. coloque a tag tr dentro da tag table.
+3. Coloque a tag th (para definir as colunas) dentro da tag tr
+4. Para cada coluna definida uma tag th deve ser colocada (todas dentro da mesma tag tr)
+5. Definida as colunas, começar a preeencher as linhas.
+6. coloque outra tag tr dentro da mesma tag table embaixo do que já foi definido como coluna.
+7. coloque a tag td para cada linha a ser acrecenteda dentro da tag tr.
+
+
+-->
+
+<table>
+
+
+    <caption>Pessoa por idade</caption>
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>idade</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        <tr>
+            <td>Mariellen</td>
+            <td>33</td>
+        </tr>
+
+        <tr>
+            <td>Gabriel</td>
+            <td>30</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>2 pessoas</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+<!--Vamos agora para tabela mais complexa. vamos fazaer uma tabela de duas lojas quantos produtos cada uma produziu e quantos cada uma vedeu
+Colpsan ocupa mais de uma coluna (o numero depois do = indica quantas colunas eu quero ocupar)
+rowspan ocupa mais de uma linha.
+-->
+<p>
+<table>
+
+    <caption>Produtos produzidos por loja</caption>
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: blueviolet;">
+        <col span="2" style="background-color: darkred;">
+
+    </colgroup>
+
+
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">
+                Café do pai
+            </th>
+            <th colspan="2" scope="colgroup">café do zé</th>
+        </tr>
+
+        <tr>
+            <th scope="col">produzidos</th>
+            <th scope="col">vendidos</th>
+            <th scope="col">produzidos</th>
+            <th scope="col"> vendidos</th>
+        </tr>
+
+
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">Café</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+
+        </tr>
+
+        <tr>
+            <th>Caputino</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+
+    </tbody>
+
+</table>
+</p>
+
+<!--scope serve para deixar as tabelas mais complexas e acessiveis scope row identifica as linhas da tabela e socope col as colunas da tabela-->

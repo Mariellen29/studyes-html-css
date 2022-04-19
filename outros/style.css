@@ -1,0 +1,117 @@
+Element type select h1 {
+    color: chartreuse;
+    font-family: 'Grape Nuts', cursive;
+}
+
+/* esse é o atalho para comentario*/
+
+/* independente da ordem da cascata o mais forte é sempre o selector element type, por isso a cor que vai aparecer na minha pagina é a que está configurada no h1)*/
+
+
+strong {
+    color: aqua;
+}
+
+
+@import 'https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap
+
+
+Seletor universal {
+    color: brown;
+}
+
+/* h1, h2, são exemplos de tag de element type style */
+
+#my-title {
+    color: black;
+}
+
+.title {
+    color: coral;
+}
+
+* {
+    margin: 0;
+}
+
+/*Devtools - ferremanta muito utilizada para desenvolvedores. 
+
+
+# Margin
+
+*margim, é o espaço (margem) entre os elementos.
+
+*podemos dividir o margin em 4 valores:
+
+margin-top / margin-right / margin-botton / margin-left
+
+* Os valores utlizados são: - Values: <length>/ <percentage>/ auto. *geralmente usamos uma forma abreviada (shorthand) para escrever o margin. Esse formato segue o sentido horário iniciando pelo TOP,
+seguindo para RIGHT,
+BOTTOM e LEFT. margim: 12px 16px 10px 4px;
+
+top right bottom e left respectivamente
+
+
+margim: 12px 16px 0
+
+ top , right and left, bottom respectvamente 
+
+Margim: 8px 16px
+
+ top and bottom , right and left respectivamente 
+
+Margim: 8px;
+
+    *a mesma margem para todos os lados
+
+* O margim é aplicado em elementos com display block * Cuidado com o margim collapsing que é quando o top se junta ao bottom. ## padding O paddinf tem as mesmas propriedades que o margim a diferença entre um e outro é que o margim configura a posição externa da caixa (onde a caixa vai ficar na pagina) e o padding configura a posição interna da caixa (onde o texto dentro da caixa vai ficar em relação a caixa) ## border São as bordas da caixa: - Value: <border-style>/ <boder-width>/ <border-color>- style: solid / dotted / dashed / double / groove / ridge / inset / outset. -width: <length>- color: <color> */
+
+```css div {
+    shorthand
+}
+
+border-top: solid 2px;
+/* top / right/ /bottom/ left*/
+
+/*style*/
+border: solid;
+
+/*width <length> / style */
+border : 2px dotted;
+
+/* style /color */
+border: outser #f33
+/*width / style / color*/
+
+border: medium dashed green;
+
+div ::selection {
+    width: 100px;
+    height: 100px;
+    margin: 20%;
+
+    border: 1px solid red;
+    border-top: solid gray;
+
+    box-sizing: border-box;
+}
+
+/*esse tipo de configuração soma 1 px do border com 100px das laterais para que isso não ocorra é necessário que coloque o boc-sizing border-box*/
+
+/*Documentação do MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/border*/
+
+
+/*E o outline?
+
+O outline é muito semelhante ao border, mas difere em 4 sentidos:
+
+    - Não modifica o tamanho da caixa, pois não é parte do Box Model
+    - Poderá ser diferente de retangular
+    - Não permite ajuste individuais
+    - Mais usado pelo user agent para acessibilidade
+*/
+/*outline:: orange 4px solid;
+
+/*um tipo de outline */
+
+/*<imput type="text">
